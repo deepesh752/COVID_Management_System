@@ -1,4 +1,4 @@
-# COVID_Management_System
+# COVID Management System
 
 The purpose of this study was to build a web application that took advantage of existing and easily available infrastructure, i.e. X-ray machines and CT-Scans for quick and efficient detection of COVID-19, along with providing other necessary details to the user. For the efficient detection of COVID-19 we propose the usage of SRCNN algorithm for increasing the resolution of the image followed by a classification algorithm for COVID-19 detection. The following key phases were considered while developing the COVID-19 detection model: Image pre-processing, Image degradation, Image superresolution, and CNN. Secondary information that was selected to be displayed in the web app included recent statistics on COVID-19 with graphical representation ,and general health information addressing the same.
 
