@@ -1,0 +1,136 @@
+{% extends 'base.html' %}
+
+<!-- Head Tag Block -->
+{% block head %}
+{#    <script src="{{ url_for('static', filename='script/info.js')}}"></script>#}
+    <link rel="stylesheet" href="{{ url_for('static', filename='style/info.css')}}">
+{% endblock %}
+
+<!-- Body Tag Block -->
+{% block body %}
+<div class="container">
+    <h3>General Health Information</h3>
+    <div class="accordian-panel">
+        <div class="accordian">
+        <div data-toggle="collapse" href="#collapse1" role="button" aria-expanded="false" aria-controls="collapse1">
+            <h5>What is COVID-19?</h5>
+        </div>
+        <div class="collapse" id="collapse1">
+            <p>
+               COVID-19 is the disease caused by a new coronavirus called SARS-CoV-2.  WHO first learned of this new virus on 31 December 2019, following a report of a cluster of cases of ‘viral pneumonia’ in Wuhan, People’s Republic of China
+            </p>
+        </div>
+    </div>
+        <div class="accordian">
+                <div data-toggle="collapse" href="#collapse2" role="button" aria-expanded="false" aria-controls="collapse2">
+                    <h5>What are the symptoms of COVID-19?</h5>
+                </div>
+                <div class="collapse" id="collapse2">
+                    <p>
+                       The most common symptoms of COVID-19 are
+
+        Fever
+        Dry cough
+        Fatigue
+        Other symptoms that are less common and may affect some patients include:
+
+        <ul>
+        <li>Loss of taste or smell,</li>
+        <li>Nasal congestion,</li>
+        <li>Conjunctivitis (also known as red eyes)</li>
+        <li>Sore throat,</li>
+        <li>Headache,</li>
+        <li>Muscle or joint pain,</li>
+        <li>Different types of skin rash,</li>
+        <li>Nausea or vomiting,</li>
+        <li>Diarrhea,</li>
+        <li>Chills or dizziness.</li>
+        </ul>
+
+
+        Symptoms of severe COVID‐19 disease include:
+
+        <ul>
+        <li>Shortness of breath,</li>
+        <li>Loss of appetite,</li>
+        <li>Confusion,</li>
+        <li>Persistent pain or pressure in the chest,</li>
+        <li>High temperature (above 38 °C).</li>
+        </ul>
+
+
+        Other less common symptoms are:
+
+        <ul>
+        <li>Irritability,</li>
+        <li>Confusion,</li>
+        <li>Reduced consciousness (sometimes associated with seizures),</li>
+        <li>Anxiety,</li>
+        <li>Depression,</li>
+        <li>Sleep disorders,</li>
+        <li>More severe and rare neurological complications such as strokes, brain inflammation, delirium and nerve damage.</li>
+        </ul>
+        People of all ages who experience fever and/or cough associated with difficulty breathing or shortness of breath, chest pain or pressure, or loss of speech or movement should seek medical care immediately. If possible, call your health care provider, hotline or health facility first, so you can be directed to the right clinic.
+                    </p>
+                </div>
+            </div>
+        <div class="accordian">
+                <div data-toggle="collapse" href="#collapse3" role="button" aria-expanded="false" aria-controls="collapse3">
+                    <h5>What happens to people who get COVID-19?</h5>
+                </div>
+                <div class="collapse" id="collapse3">
+                    <p>
+                       Among those who develop symptoms, most (about 80%) recover from the disease without needing hospital treatment. About 15% become seriously ill and require oxygen and 5% become critically ill and need intensive care.
+
+        Complications leading to death may include respiratory failure, acute respiratory distress syndrome (ARDS), sepsis and septic shock, thromboembolism, and/or multiorgan failure, including injury of the heart, liver or kidneys.
+
+        In rare situations, children can develop a severe inflammatory syndrome a few weeks after infection.
+                    </p>
+                </div>
+            </div>
+        <div class="accordian">
+                <div data-toggle="collapse" href="#collapse4" role="button" aria-expanded="false" aria-controls="collapse4">
+                    <h5>Are there long-term effects of COVID-19?</h5>
+                </div>
+                <div class="collapse" id="collapse4">
+                    <p>
+                        Some people who have had COVID-19, whether they have needed hospitalization or not, continue to experience symptoms, including fatigue, respiratory and neurological symptoms.
+                        WHO is working with our Global Technical Network for Clinical Management of COVID-19, researchers and patient groups around the world to design and carry out studies of patients beyond the initial acute course of illness to understand the proportion of patients who have long term effects, how long they persist, and why they occur.  These studies will be used to develop further guidance for patient care.
+                    </p>
+                </div>
+            </div>
+        <div class="accordian">
+                <div data-toggle="collapse" href="#collapse5" role="button" aria-expanded="false" aria-controls="collapse5">
+                    <h5>How can we protect others and ourselves if we don't know who is infected?</h5>
+                </div>
+                <div class="collapse" id="collapse5">
+                    <p>
+                       Stay safe by taking some simple precautions, such as physical distancing, wearing a mask, especially when distancing cannot be maintained, keeping rooms well ventilated, avoiding crowds and close contact, regularly cleaning your hands, and coughing into a bent elbow or tissue. Check local advice where you live and work. Do it all!
+                    </p>
+                </div>
+            </div>
+        <div class="accordian">
+                <div data-toggle="collapse" href="#collapse6" role="button" aria-expanded="false" aria-controls="collapse6">
+                    <h5>When should I get a test for COVID-19?</h5>
+                </div>
+                <div class="collapse" id="collapse6">
+                    <p>
+                        Anyone with symptoms should be tested, wherever possible. People who do not have symptoms but have had close contact with someone who is, or may be, infected may also consider testing – contact your local health guidelines and follow their guidance.
+                        While a person is waiting for test results, they should remain isolated from others. Where testing capacity is limited, tests should first be done for those at higher risk of infection, such as health workers, and those at higher risk of severe illness such as older people, especially those living in seniors’ residences or long-term care facilities.
+                    </p>
+                </div>
+            </div>
+        <div class="accordian">
+                <div data-toggle="collapse" href="#collapse7" role="button" aria-expanded="false" aria-controls="collapse7">
+                    <h5>What test should I get to see if I have COVID-19?</h5>
+                </div>
+                <div class="collapse" id="collapse7">
+                    <p>
+                       In most situations, a molecular test is used to detect SARS-CoV-2 and confirm infection. Polymerase chain reaction (PCR) is the most commonly used molecular test. Samples are collected from the nose and/or throat with a swab. Molecular tests detect virus in the sample by amplifying viral genetic material to detectable levels. For this reason, a molecular test is used to confirm an active infection, usually within a few days of exposure and around the time that symptoms may begin.
+                        <a href="https://www.who.int/emergencies/diseases/novel-coronavirus-2019/media-resources/science-in-5/episode-14---covid-19---tests">Learn more about what kind of COVID-19 tests are available</a>
+                    </p>
+                </div>
+            </div>
+    </div>
+</div>
+{% endblock %}

@@ -1,0 +1,10 @@
+.accordian-panel{
+    margin: 50px 30px 50px 60px;
+}
+
+.accordian{
+    padding: 10px ;
+    margin:5px 5px 15px 5px;
+    border: 1px solid #acacad;
+    border-radius: 25px;
+}

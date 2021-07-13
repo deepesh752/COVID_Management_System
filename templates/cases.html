@@ -1,0 +1,67 @@
+{% extends 'base.html' %}
+
+<!-- Body Tag Block -->
+{% block body %}
+
+<div class="container">
+<h3 style="">COVID 19 Case Stats</h3>
+    <main>
+      <div class="stats">
+        <div class="latest-report">
+          <div class="country">
+            <div class="name">Loading...</div>
+            <div class="change-country">change</div>
+            <div class="search-country hide">
+              <div class="search-box">
+                <input
+                  type="text"
+                  id="search-input"
+                  placeholder="Search Country..."
+                />
+                <img class="close" src="./resources/img/close.svg" alt="" />
+              </div>
+              <div class="country-list"></div>
+            </div>
+          </div>
+          <div class="total-cases">
+            <div class="title">Total Cases</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="recovered">
+            <div class="title">Recovered</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+          <div class="deaths">
+            <div class="title">Deaths</div>
+            <div class="value">0</div>
+            <div class="new-value">+0</div>
+          </div>
+        </div>
+        <div class="chart">
+          <canvas id="axes_line_chart"></canvas>
+        </div>
+      </div>
+    </main>
+</div>
+        <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"
+      integrity="sha256-R4pqcOYV8lt7snxMQO/HSbVCFRPMdrhAFMH+vr9giYI="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      language="JavaScript"
+      src="http://www.geoplugin.net/javascript.gp"
+      type="text/javascript"
+    ></script>
+
+    <script src="{{ url_for('static', filename='script/countries.js')}}"></script>
+    <script src="{{ url_for('static', filename='script/app.js')}}"></script>
+{% endblock %}
+
+<!-- Head Tag Block -->
+{% block head %}
+<link rel="stylesheet" href="{{ url_for('static', filename='style/cases_style.css')}}">
+    
+{% endblock %}
