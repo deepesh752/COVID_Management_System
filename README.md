@@ -13,7 +13,7 @@ Flask is a micro-framework which was chosen to supplement the project, reason be
 ![image](https://user-images.githubusercontent.com/39914367/125448780-a5f61e96-c58d-4870-8cf2-8d6203d80dcb.png)
 
 
-##Results
+## Results
 
 The accuracy that was attained after 20 epochs of training was 95%. This accuracy was higher than the accuracy of the model in which image super-resolution was not considered. Due to image super-resolution, our model achieved this accuracy. For hyper tuning, we hyper-tuned loss function, optimizer, epochs, and the learning rate. The corresponding values for the hyperparameters were: binary cross entropy as the loss function, ADAM as the optimizer, 20 is the number of epochs, and 0.002 as the learning rate. 
 
